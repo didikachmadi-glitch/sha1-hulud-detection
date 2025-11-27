@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Secure Portal</title>
+    <meta name="description" content="Secure login portal using Google Authentication">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="login-container">
+        <div class="login-card" id="login-card">
+            <div class="logo-area">
+                <i class="fa-solid fa-layer-group logo-icon"></i>
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Sign in to access your dashboard</p>
+            </div>
+
+            <button id="google-login-btn" class="google-btn">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="google-icon">
+                <span>Continue with Google</span>
+                <div class="loader" id="btn-loader"></div>
+            </button>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <p class="footer-text">
+                Don't have an account? <a href="#">Request Access</a>
+            </p>
+        </div>
+
+        <!-- User Info Section (Appears after login) -->
+        <div class="login-card" id="user-info">
+            <img id="user-avatar" src="" alt="User Avatar" class="avatar">
+            <h2 id="user-name">User Name</h2>
+            <p id="user-email" class="subtitle">user@example.com</p>
+            <button id="logout-btn" class="logout-btn">Sign Out</button>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
